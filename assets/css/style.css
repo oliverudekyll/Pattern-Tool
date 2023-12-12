@@ -1,3 +1,53 @@
 body {
-  font-family: "ABCRepro-Medium", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.55rem;
+    line-height: 140%;
+    color:  hsl(0, 0%, 70%);
+
+    background-color: hsl(0, 0%, 0%);
+}
+
+header {
+    padding: 1rem;
+}
+
+.ornament-logos--container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:  hsl(0, 0%, 70%);
+}
+
+@keyframes blur {
+    0% {filter:blur(0px);}
+    50% {filter:blur(1px);}
+    100% {filter:blur(0px);}
+}
+
+b.ornament {
+    font-family: "Ornaments Outline";
+    font-size: 2rem;
+/*     animation: blur 4s linear infinite; */
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    -webkit-text-stroke: .08em;
+}
+
+a {
+    color:  hsl(0, 0%, 70%);
+    text-decoration: underline;
+    text-decoration-thickness: .5rem;
+
+    transition: color, transform;
+    transition-duration: .15s;
+    transition-timing-function: ease-in-out;  
+}
+
+a:hover {
+    color: hsl(0, 0%, 100%);
 }

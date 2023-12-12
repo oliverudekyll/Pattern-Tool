@@ -1,0 +1,244 @@
+body {
+  background-color: hsl(0, 0%, 5%);
+}
+
+.btn--burger {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+
+  display: flex;
+  justify-content: flex-end;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 70%);
+  -webkit-text-stroke: .07em;
+/*   text-transform: uppercase; */
+
+  align-self: flex-start;
+  transition: color, transform;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+
+  cursor: pointer;
+  z-index: 999;
+}
+
+.btn--burger:hover {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+  text-decoration-thickness: .5rem;
+}
+
+.sidebar {
+  position: fixed;
+  width: max-content;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+
+  display: none;
+  flex-flow: column;
+  gap: 1rem;
+
+  background-color: black;
+  z-index: 999;
+  border: 1px hsl(0, 0%, 20%) solid;
+  border-radius: 1rem;
+}
+
+.sidebar.active {
+  position: fixed;
+  width: max-content;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+
+  background-color: black;
+  z-index: 999;
+  border: 1px hsl(0, 0%, 20%) solid;
+}
+
+.sidebar_nav-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-button {
+  position: relative;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 70%);
+  -webkit-text-stroke: .07em;
+  text-decoration: none;
+
+  align-self: flex-start;
+  transition: color, transform;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+
+  cursor: pointer;
+}
+
+.home-button:hover {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+  text-decoration-thickness: .5rem;
+}
+
+.close-button {
+  position: relative;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 70%);
+  -webkit-text-stroke: .07em;
+
+  align-self: flex-start;
+  transition: color, transform;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+  text-decoration-thickness: .5rem;
+}
+
+.btn--container {
+  position: relative;
+  padding: 1rem;
+  height: min-content;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+
+  z-index: 100;
+  background-color: black;
+  border: 1px hsl(0, 0%, 20%) solid;
+  border-radius: 1rem;
+}
+
+.btn--outline, .btn--regular {
+  font-family: "Ornaments";
+  font-size: 3rem;
+  line-height: 168.3%;
+  color: hsl(0, 0%, 70%);
+  text-wrap: wrap;
+  text-align: center;
+
+
+  background-color: none;
+  cursor: pointer;
+
+  transition: color, transform;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn--outline {
+  font-family: "Ornaments Outline";
+}
+
+.btn--outline:hover, .btn--regular:hover {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+  text-decoration-thickness: .5rem;
+}
+
+ul {
+  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: 1px hsl(0, 0%, 20%) solid;
+
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  color: hsl(0, 0%, 70%);
+  -webkit-text-stroke: .07em;
+  border-radius: 1rem;
+
+  overflow: auto;
+}
+
+.ornament {
+  font-family: "Ornaments";
+  line-height: 2rem;
+  font-weight: normal;
+  -webkit-text-stroke: 0px;
+}
+
+.ornament.outline {
+  font-family: "Ornaments Outline";
+}
+
+ul li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.letter {
+  width: 1.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: .07em;
+
+}
+
+
+
+
+
+
+
+
+
+
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  position: absolute;
+  padding: 2rem;
+
+  font-family: "Ornaments";
+  font-size: 2rem;
+  line-height: 168.3%;
+  color: hsl(0, 0%, 70%);
+  text-wrap: wrap;
+  hyphens: none;
+
+  background-color: black;
+  resize: none;
+  border: 1px hsl(0, 0%, 20%) solid;
+  overflow: hidden;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+textarea.outline {
+  font-family: "Ornaments Outline";
+}

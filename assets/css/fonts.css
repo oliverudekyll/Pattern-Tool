@@ -1,7 +1,16 @@
 @font-face {
-  font-family: "ABCRepro-Medium";
+  font-family: "Ornaments";
   font-weight: normal;
   font-style: normal;
   font-display: auto;
-  src: url("../fonts/ABCRepro-Medium-Trial.woff") format("woff"), url("../fonts/ABCRepro-Medium-Trial.woff2") format("woff2");
+  src: url("../fonts/LSOrnaments-Regular.woff") format(woff), url("../fonts/LSOrnaments-Regular.woff2") format(woff2);
 }
+
+@font-face {
+  font-family: "Ornaments Outline";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/LSOrnaments-Outline.woff") format(woff), url("../fonts/LSOrnaments-Outline.woff2") format(woff2);
+}
+
