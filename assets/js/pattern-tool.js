@@ -1,12 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
   const textArea = document.getElementById('textArea');
+  const textAreaWidth = textArea.scrollWidth;
+  const textAreaHeight = textArea.scrollHeight;
+  const windowHeight = window.innerHeight;
+  const windowWidth = window.innerWidth;
 
-  if (textArea) { 
+  if (textArea) {
+    textArea.style.height = windowHeight - 64 + 'px';
+    textArea.style.width = windowWidth - 64 + 'px';
+  }
+
+/*   if (textArea) { 
     let i = 0;
 
     while (
       textArea.getBoundingClientRect().top >= 64 &&
-      textArea.getBoundingClientRect().bottom <= window.innerHeight - 64
+      textArea.getBoundingClientRect().bottom <= window.innerHeight - 64 &&
+      textAreaHeight < windowHeight
     ) {
       textArea.rows = i;
       i++;
@@ -16,18 +26,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   const textArea = document.getElementById('textArea');
+  const textAreaWidth = textArea.scrollWidth;
+  const textAreaHeight = textArea.scrollHeight;
+  const windowHeight = window.innerHeight;
+  const windowWidth = window.innerWidth;
 
   if (textArea) { 
     let i = 0;
 
     while (
       textArea.getBoundingClientRect().right <= window.innerWidth - 64 &&
-      textArea.getBoundingClientRect().left >= 64
+      textArea.getBoundingClientRect().left >= 64 &&
+      textAreaWidth < windowWidth
     ) {
       textArea.cols = i;
       i++;
     }
-  }
+  } */
 });
 
 const close = document.getElementById('close');

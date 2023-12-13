@@ -240,6 +240,15 @@ textarea {
   border-radius: 1rem;
 }
 
+textarea::placeholder {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 100%;
+  color: hsl(0, 0%, 15%);
+  -webkit-text-stroke: .07em;
+}
+
 textarea.outline {
   font-family: "Ornaments Outline";
   color: white;
