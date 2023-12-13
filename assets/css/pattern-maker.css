@@ -251,5 +251,7 @@ textarea.outline {
     width: calc(100dvw - 4rem);
     height: calc(100vh - 4rem);
     height: calc(100dvh - 4rem);
+
+    padding: 1rem;
   }
 }
