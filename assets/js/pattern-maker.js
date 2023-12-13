@@ -61,7 +61,7 @@ btnRegular.addEventListener("click", function(){
 }) 
 
 document.addEventListener('DOMContentLoaded', function() {
-  const allowedCharacters = 'abcdefghijklmnABCDEFGHIJKLMN .'; // Add characters from your font
+  const allowedCharacters = 'abcdefghijklmnABCDEFGHIJKLMN .\n\r';
 
   const textArea = document.getElementById('textArea');
 
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const filteredValue = inputValue.split('').filter(char => allowedCharacters.includes(char)).join('');
 
       if (inputValue !== filteredValue) {
-          textArea.value = filteredValue; // Fix the variable name here
+          textArea.value = filteredValue;
       }
   });
 });

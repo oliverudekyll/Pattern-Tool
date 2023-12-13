@@ -187,6 +187,7 @@ ul {
 
 .ornament.outline {
   font-family: "Ornaments Outline";
+  color: white;
 }
 
 ul li {
@@ -241,4 +242,12 @@ textarea {
 
 textarea.outline {
   font-family: "Ornaments Outline";
+  color: white;
+}
+
+@media screen and (max-width: 850px) {
+  textarea {
+    width: calc(100vw - 4rem);
+    height: calc(100vh - 4rem);
+  }
 }
