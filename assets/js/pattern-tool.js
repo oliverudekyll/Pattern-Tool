@@ -50,7 +50,7 @@ const menu = document.getElementById('menu');
 const sidebar = document.getElementById('sidebar');
 
 menu.addEventListener('click', function() {
-  sidebar.classList.toggle("active");
+  sidebar.classList.add("active");
 })
 
 close.addEventListener('click', function() {
@@ -63,8 +63,8 @@ const textArea = document.getElementById('textArea');
 const ornament = document.querySelectorAll(".ornament");
 
 btnOutline.addEventListener("click", function(){
-  textArea.classList.toggle("outline");
-  ornament.forEach(element => element.classList.toggle("outline"));
+  textArea.classList.add("outline");
+  ornament.forEach(element => element.classList.add("outline"));
 }) 
 
 btnRegular.addEventListener("click", function(){
